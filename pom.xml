@@ -37,7 +37,7 @@
                 <executions>
                     <execution>
                         <id>start-server</id>
-                        <phase>pre-integration-test</phase>
+                        <phase>integration-test</phase>
                         <goals>
                             <goal>java</goal>
                         </goals>
