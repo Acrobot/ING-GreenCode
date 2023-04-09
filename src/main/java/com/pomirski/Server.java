@@ -1,6 +1,7 @@
 package com.pomirski;
 
 import com.pomirski.atm.AtmApp;
+import com.pomirski.onlinegame.OnlineGameApp;
 import com.pomirski.transactions.TransactionsApp;
 import org.takes.facets.fork.FkRegex;
 import org.takes.facets.fork.TkFork;
@@ -12,7 +13,8 @@ public class Server {
         new FtBasic(
                 new TkFork(
                         new FkRegex("/atms/calculateOrder", new AtmApp()),
-                        new FkRegex("/transactions/report", new TransactionsApp())),
+                        new FkRegex("/transactions/report", new TransactionsApp()),
+                        new FkRegex("/onlinegame/calculate", new OnlineGameApp())),
                 8080
         ).start(Exit.NEVER);
     }
