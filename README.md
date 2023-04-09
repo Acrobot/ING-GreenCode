@@ -11,6 +11,8 @@ Open source licenses:
 
 You can run the build using build.sh and run the server using run.sh (but it will build the library anyway).
 
+The code security is tested using [CodeQL](https://codeql.github.com/) provided by GitHub. The results are available
+at https://github.com/Acrobot/ING-GreenCode/actions/workflows/codeql.yml.
 
 -------
 
@@ -23,3 +25,6 @@ Licencje wolnego oprogramowania:
 
 Program zbudować można poprzez uruchomienie build.sh, a serwer uruchomić używając run.sh
 (chociaż i tak uruchomi to proces budowania).
+
+Analiza bezpieczeństwa kodu jest przeprowadzana używając [CodeQL](https://codeql.github.com/) od GitHuba. Rezultaty
+dostępne są pod adresem https://github.com/Acrobot/ING-GreenCode/actions/workflows/codeql.yml.
